@@ -2,7 +2,9 @@ name: Job Watcher
 
 on:
   schedule:
-    - cron: "30 7 * * *"   # every day at 07:30 UTC ≈ 1:00 PM IST
+    - cron: "0 2 * * *"   # 7:30 AM IST
+    - cron: "0 8 * * *"   # 1:30 PM IST
+    - cron: "0 16 * * *"  # 9:30 PM IST
   workflow_dispatch:        # allows manual run
 
 jobs:
